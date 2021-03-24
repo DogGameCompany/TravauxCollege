@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tous les travaux pour le collège Maurice Genevoix</title>
+</head>
+
+<body>
+
+  <form class="connect-box">
+    <a href="#" onclick="passWord()" class="connect-link">Cliquez ici pour vous connecter et accéder à votre
+      service.</a>
+  </form>
+
+  <script>
+    function passWord() {
+      var testV = 1;
+      var pass1 = prompt('Veuillez entrer le mot de passe', ' ');
+      while (testV < 3) {
+        if (!pass1)
+          history.go(-1);
+        if (pass1.toLowerCase() == "genevoix1") {
+          window.open('accueil.html');
+          break;
+        }
+        testV += 1;
+        var pass1 =
+          prompt('Erreur', 'Mot de passe');
+      }
+    }
+  </script>
+</body>
+
+</html>

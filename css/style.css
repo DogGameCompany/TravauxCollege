@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: 	none;
+}
+
+/* ************************* INDEX.HTML ************************* */
+.connect-box {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect-box .connect-link {
+  text-decoration: none;
+  font-size: 50px;
+  color: #326da8;
+  padding: 20px;
+  border: 2px solid #fff;
+  transition: 0.2s;
+}
+
+.connect-box .connect-link:hover {
+  border: 2px solid #326da8;
+}
+
+/* ************************ ACCUEIL.HTML ************************ */
+.title-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #326da8;
+}
+
+.title-box .title {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.title-box .discover-link {
+  text-decoration: none;
+  font-size: 25px;
+  margin: 100px;
+  padding: 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: 0.2s;
+}
+
+.title-box .discover-link:hover {
+  background-color: #fff;
+  color: #326da8;
+}
+
+.travaux-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.travaux-box .sub-title {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.travaux-box .matieres-box {
+  margin: 100px;
+}
+
+.travaux-box .matieres-box .link {
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 20px;
+  padding: 20px;
+  color: #326da8;
+  border: 2px solid #326da8;
+  transition: 0.2s;
+}
+
+.travaux-box .matieres-box .link:hover {
+  background-color: #326da8;
+  color: #fff;
+}
